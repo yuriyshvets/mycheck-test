@@ -37,10 +37,6 @@ const GuestsListItem: React.FC<Props> = ({ guest, event }) => {
     status === ACCEPTED ? setAcceptLoading(true) : setDeclineLoading(true);
   };
 
-  const a = (show: string) => {
-    console.log(show);
-  };
-
   useEffect(() => {
     if (status !== guest.status) {
       setDeclineLoading(false);
