@@ -33,7 +33,7 @@ const GuestsListItem: React.FC<Props> = ({ guest, event }) => {
         status,
       }),
     );
-    // setStatus(status);
+
     status === ACCEPTED ? setAcceptLoading(true) : setDeclineLoading(true);
   };
 
