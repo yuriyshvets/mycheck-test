@@ -18,5 +18,3 @@ export interface UpdateGuestPayload {
 }
 
 export type UpdateGuestAction = BasicActionWithPayload<UpdateGuestPayload>;
-
-export type ActionTypes = SetEventsAction | UpdateGuestAction;
