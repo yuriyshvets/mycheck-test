@@ -1,13 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import store from './store';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import { makeServer } from './mockServer';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+if (process.env.NODE_ENV === 'development') {
+  makeServer({ environment: 'development' });
+}
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <App />
+    </Provider>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );
 
 // If you want your app to work offline and load faster, you can change

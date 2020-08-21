@@ -1,6 +1,6 @@
-import api from "../index";
-import { Event } from "../../types/index";
+import api from '../index';
+import { Event } from '../../types/index';
 
-export const requestGetUsers = () => {
-  return api.get<Event[]>(`/users`);
+export const requestGetEvents = () => {
+  return api.get<Event[]>(`/events`);
 };

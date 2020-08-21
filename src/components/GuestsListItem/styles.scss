@@ -1,0 +1,21 @@
+.list-group {
+  .guest-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    &:first-child {
+      padding-top: 0;
+    }
+    &:last-child {
+      padding-bottom: 0;
+    }
+    & + .guest-item {
+      border-top: 1px solid rgba(0, 0, 0, 0.125);
+    }
+    .user-name {
+      display: inline-block;
+      width: 220px;
+    }
+  }
+}

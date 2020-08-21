@@ -1,0 +1,16 @@
+h1 {
+  text-align: center;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.main-content {
+  display: flex;
+  flex-direction: column;
+}
+.main-header {
+  & + h1 {
+    margin-bottom: 50px;
+  }
+}

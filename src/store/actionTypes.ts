@@ -1,0 +1,4 @@
+export const SET_EVENTS = 'SET_EVENTS';
+export const SET_EVENTS_ASYNC = 'SET_EVENTS_ASYNC';
+export const UPDATE_GUEST = 'UPDATE_GUEST';
+export const UPDATE_GUEST_ASYNC = 'UPDATE_GUEST_ASYNC';

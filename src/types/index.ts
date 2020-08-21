@@ -1,11 +1,14 @@
+import { ACCEPTED, DECLINED } from '../constants';
+export type Status = typeof ACCEPTED | typeof DECLINED;
 export interface Guest {
   id: number;
   name: string;
   email: string;
-  status: 'accepted' | 'declined';
+  status: Status;
 }
 
 export interface Event {
+  id: number;
   name: string;
   guestsList: Guest[];
 }
