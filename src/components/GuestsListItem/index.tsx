@@ -17,7 +17,7 @@ interface Props {
 
 const GuestsListItem: React.FC<Props> = ({ guest, event }) => {
   const [show, setShow] = useState(false);
-  const [status, setStatus] = useState(guest.status);
+  const [status] = useState(guest.status);
   const [declineLoading, setDeclineLoading] = useState(false);
   const [acceptLoading, setAcceptLoading] = useState(false);
 
@@ -33,7 +33,7 @@ const GuestsListItem: React.FC<Props> = ({ guest, event }) => {
         status,
       }),
     );
-    setStatus(status);
+    // setStatus(status);
     status === ACCEPTED ? setAcceptLoading(true) : setDeclineLoading(true);
   };
 
