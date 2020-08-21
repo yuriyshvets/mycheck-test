@@ -92,7 +92,7 @@ export function makeServer({ environment = 'test' } = {}) {
         (schema) => {
           return schema.events.all();
         },
-        { timing: 1000 },
+        { timing: 2000 },
       );
 
       this.put(
@@ -100,7 +100,7 @@ export function makeServer({ environment = 'test' } = {}) {
         (schema, request) => {
           return JSON.parse(request.requestBody);
         },
-        { timing: 1000 },
+        { timing: 2000 },
       );
     },
   });
